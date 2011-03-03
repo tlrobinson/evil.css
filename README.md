@@ -5,6 +5,8 @@ Mess with peoples' webpages. Various subtle and not-so-subtle CSS rules that wil
 
 Inspired by [Upside-Down-Ternet](http://www.ex-parrot.com/pete/upside-down-ternet.html) and kitgoncharov's [evil.js](https://github.com/kitgoncharov/evil.js/tree/).
 
+Fork it and add your own evil rules. Worthy pull requests will be accepted.
+
 How to use it
 -------------
 
@@ -18,6 +20,10 @@ Inject it into unsuspecting users' webpages. evil.js was intended to wreak havoc
 A script called `evil-safari-mac.sh` is included that automates setting Safari's user stylesheet to the latest version of evil.css. Run it on any Mac using Terminal.app with this easy to remember URL:
 
     curl -L bit.ly/evil-safari-mac | sh
+
+Uninstall it by deselecting the stylesheet in Safari's preferences, or execute this in a shell:
+
+    defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "1"
 
 Credits
 -------
