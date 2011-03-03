@@ -37,6 +37,7 @@ Credits
 
 * [@tlrobinson](https://twitter.com/tlrobinson)
 * [@paulbaumgart](https://twitter.com/paulbaumgart)
+* [@cconger](https://twitter.com/cconger)
 
 License
 -------
