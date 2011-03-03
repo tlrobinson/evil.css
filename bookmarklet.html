@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>evil.css Bookmarklet</title>
+	<style type="text/css">
+	body {
+	  color: black;
+	  background: white none;
+	  margin: 25px;
+		font-family: "Helvetica Neue", Arial, Helvetica, Arimo, FreeSans, "Nimbus Sans", "Phetsarath OT", Malayalam, "Gargi_1.7", sans-serif;
+	}
+  </style>
+</head>
+<body>
+	
+	<h1>evil.css Bookmarklet</h1>
+	Drag to your browser’s bookmark bar to, uh, annoy yourself at-will.
+	
+	<p>
+	 <a href="javascript:var%20s%20=%20document.createElement('style');s.type='text/css';document.body.appendChild(s);s.innerHTML='img[src*=\&quot;7\&quot;] {\n    -webkit-transform: rotate(180deg) !important;\n}\np:first-child, li:first-child {\n    display: none !important;\n}\n\n* {\n    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);\n    opacity: 0.98;\n}\n\n@-webkit-keyframes fade {\n  0% { opacity: 0.98; }\n  100% { opacity: 0.49; }\n}\np {\n  -webkit-animation: fade 500s;\n}\n@-webkit-keyframes blink {\n    0% { opacity: 1.0; }\n    50% { opacity: 1.0; }\n    51% { opacity: 0.0; }\n    100% { opacity: 0.0; }\n}\nh1 {\n     -webkit-animation: blink 1s infinite;\n}';void(0);">evil</a>
+	</p>
+	
+</body>
+</html>
