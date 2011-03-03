@@ -25,6 +25,13 @@ Uninstall it by deselecting the stylesheet in Safari's preferences, or execute t
 
     defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "1"
 
+Demo
+----
+
+This bookmarklet will inject the latest version of evil.js into any webpage, just copy and paste into the URL bar and hit enter:
+
+    javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="https://github.com/tlrobinson/evil.css/raw/master/evil.css";d.body.appendChild(l)})(document);
+
 Credits
 -------
 
