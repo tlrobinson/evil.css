@@ -1,9 +1,9 @@
-/* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle. */
+/* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
 /*body {
     -webkit-transform: rotate(180deg) !important;
 }*/
 
-/* rotate *some* images 180 degrees. credit to @paulbaumgart */
+/* rotate *some* images 180 degrees */
 img[src*="7"] {
     -webkit-transform: rotate(180deg) !important;
 }
