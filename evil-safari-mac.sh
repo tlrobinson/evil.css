@@ -1,7 +1,7 @@
 #!/bin/sh
 
 base="$HOME/Library/Application Support/Safari"
-file="$base/upsidedown.css"
+file="$base/evil.css"
 
 mkdir -p "$base"
 curl -L 'https://github.com/tlrobinson/evil.css/raw/master/evil.css' > "$file"
