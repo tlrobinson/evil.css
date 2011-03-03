@@ -24,8 +24,9 @@ p:first-child, li:first-child {
   100% { opacity: 0.49; }
 }
 
+/* Oh were you reading that? */
 p {
-  -webkit-animation: fade 200s;
+  -webkit-animation: fade 500s;
 }
 
 /* bring back <blink>! */
