@@ -12,3 +12,21 @@ img[src*="7"] {
 p:first-child, li:first-child {
     display: none !important;
 }
+
+/* make everything sliiiightly blurry and foggy */
+* {
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
+    opacity: 0.98;
+}
+
+/* bring back <blink>! */
+@-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+/* apply <blink> to H1s */
+h1 {
+     -webkit-animation: blink 1s infinite;
+}
