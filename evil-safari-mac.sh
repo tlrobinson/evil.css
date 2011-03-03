@@ -4,7 +4,7 @@ base="$HOME/Library/Application Support/Safari"
 file="$base/upsidedown.css"
 
 mkdir -p "$base"
-echo 'body { -webkit-transform: rotate(180deg); }' > "$file"
+curl -L 'https://github.com/tlrobinson/evil.css/raw/master/evil.css' > "$file"
 
 osascript -e 'tell application "Safari"' -e 'quit' -e 'end tell'
 sleep 1

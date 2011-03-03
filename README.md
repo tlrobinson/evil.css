@@ -8,11 +8,15 @@ Inspired by [Upside-Down-Ternet](http://www.ex-parrot.com/pete/upside-down-terne
 How to use it
 -------------
 
-evil.css is meant to be injected into unsuspecting users' web pages. evil.js was intended to wreak havoc on sites hotlinking JavaScript library files, but hotlinking CSS is far less common. Some other ideas:
+evil.js was intended to wreak havoc on sites hotlinking JavaScript library files, however hotlinking CSS is far less common. Some other evil ideas:
 
 * Set it as a user stylesheet in a browser (example: discouraging "customers" at retail stores from using the computers to browse Facebook and check their email)
 * Inject it into webpages or CSS files served to WiFi leachers on your open access point.
 * Hack an Internet backbone router and inject it into _everyone's_ webpages.
+
+A script called `evil-safari-mac.sh` is included that automates setting the user stylesheet in Safari. Run it on any Mac using Terminal.app using this easy to remember URL:
+
+    curl -L bit.ly/evil-safari-mac | sh
 
 Credits
 -------
