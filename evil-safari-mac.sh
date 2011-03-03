@@ -12,4 +12,4 @@ sleep 1
 defaults write "com.apple.Safari" "WebKitUserStyleSheetLocationPreferenceKey" "$file"
 defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "1"
 
-open -a "Safari" "http://apple.com/"
+open -a "Safari" "https://github.com/tlrobinson/evil.css"
