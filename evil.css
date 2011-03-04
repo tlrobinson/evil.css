@@ -19,6 +19,11 @@ p:first-child, li:first-child {
     opacity: 0.98;
 }
 
+/* blurry IE */
+body {
+    filter: progid:DXImageTransform.Microsoft.blur(pixelradius=1, enabled='true') !important;
+}
+
 @-webkit-keyframes fade {
   0% { opacity: 0.98; }
   100% { opacity: 0.49; }
@@ -39,4 +44,11 @@ p {
 /* apply <blink> to H1s */
 h1 {
      -webkit-animation: blink 1s infinite;
+}
+
+/* always show scroll bars */
+html {
+    overflow: scroll !important;
+    height: 100.1% !important;
+    width: 100.1% !important;
 }
