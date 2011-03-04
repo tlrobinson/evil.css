@@ -13,6 +13,11 @@ p:first-child, li:first-child {
     display: none !important;
 }
 
+/* Slightly smaller first letters */
+*:first-letter {
+    font-size: 90% !important;
+}
+
 /* make everything sliiiightly blurry and foggy */
 * {
     text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
