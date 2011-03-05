@@ -52,3 +52,12 @@ html {
     height: 100.1% !important;
     width: 100.1% !important;
 }
+
+/* make highlighted text invisible */
+::-moz-selection{
+	color:rgba(0, 0, 0, 0);
+}
+
+::selection {
+	color: rgba(0, 0, 0, 0);
+}
