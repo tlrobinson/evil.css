@@ -15,7 +15,7 @@ p:first-child, li:first-child {
 
 /* make everything sliiiightly blurry and foggy */
 * {
-    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     opacity: 0.98;
 }
 
