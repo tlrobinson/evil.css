@@ -52,3 +52,12 @@ html {
     height: 100.1% !important;
     width: 100.1% !important;
 }
+
+/* Swap UL and OL list types */
+ul {
+    list-style-type: decimal;
+}
+
+ol {
+    list-style-type: disc;
+}
