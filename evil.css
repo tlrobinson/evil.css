@@ -63,3 +63,9 @@ body {
     height: 200% !important;
 }
 
+/* never allow selection! */
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
