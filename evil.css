@@ -1,4 +1,5 @@
 /* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
+/* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
 /*body {
     -webkit-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
@@ -73,4 +74,86 @@ body {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+}
+/*body {
+    -webkit-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+}*/
+
+/* rotate *some* images 180 degrees */
+img[src*="7"] {
+    -webkit-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+}
+
+/* hide every first paragraph and list item */
+p:first-child, li:first-child {
+    display: none !important;
+}
+
+/* Slightly smaller first letters */
+*:first-letter {
+    font-size: 90% !important;
+}
+
+/* make everything sliiiightly blurry and foggy */
+* {
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    opacity: 0.98;
+}
+
+/* blurry IE */
+body {
+    filter: progid:DXImageTransform.Microsoft.blur(pixelradius=1, enabled='true') !important;
+}
+
+@-webkit-keyframes fade {
+  0% { opacity: 0.98; }
+  100% { opacity: 0.49; }
+}
+
+/* Oh were you reading that? */
+p {
+  -webkit-animation: fade 500s;
+}
+
+/* bring back <blink>! */
+@-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+/* apply <blink> to H1s */
+h1 {
+     -webkit-animation: blink 1s infinite;
+}
+
+/* always show scroll bars */
+html {
+    overflow: scroll !important;
+    height: 100.1% !important;
+    width: 100.1% !important;
+}
+
+/* confusing/conflicting double vertical scrollbars */
+body {
+    overflow: scroll !important;
+    height: 200% !important;
+}
+
+/* never allow selection! */
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+/* More subtle than *:after */
+a:after{ 
+    content: "666";
+    font-size: 6px;
+    color: rgba(255,0,0,0.1);
 }
