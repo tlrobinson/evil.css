@@ -89,7 +89,7 @@ p {
 	0% { opacity: 1.0; }
 	50% { opacity: 1.0; }
 	51% { opacity: 0.0; }
-	100% { opcaity: 0.0; }
+	100% { opacity: 0.0; }
 }
 @-o-keyframes blink {
 	0% { opacity: 1.0; }
