@@ -79,9 +79,30 @@ p {
     51% { opacity: 0.0; }
     100% { opacity: 0.0; }
 }
+@-moz-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 1.0; }
+	51% { opacity: 0.0; }
+	100% { opacity: 0.0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 1.0; }
+	51% { opacity: 0.0; }
+	100% { opcaity: 0.0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 1.0; }
+	51% { opacity: 0.0; }
+	100% { opacity: 0.0; }
+}
 /* apply <blink> to H1s */
 h1 {
-     -webkit-animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite;
+	-moz-animation: blink 1s infinite;
+	-ms-animation: blink 1s infinite;
+	-o-animation: blink 1s infinite;
 }
 
 /* always show scroll bars */
