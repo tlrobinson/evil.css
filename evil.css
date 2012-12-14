@@ -1,30 +1,8 @@
 /* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
-/*body {
+body {
     -webkit-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
     -moz-transform: rotate(180deg) !important;
-}*/
-
-/* more subtle page rotation evilness */
-@-webkit-keyframes sutle-rotate {
-    0% { -webkit-transform: rotate(0deg); }
-	99% { -webkit-transform: rotate(90deg); }
-	100% { -webkit-transform: rotate(180deg); }
-}
-@-moz-keyframes sutle-rotate {
-	0% { -moz-transform: rotate(0deg); }
-	99% { -moz-transform: rotate(90deg); }
-	100% { -moz-transform: rotate(180deg); }
-}
-@-ms-keyframes sutle-rotate {
-	0% { -ms-transform: rotate(0deg); }
-	99% { -ms-transform: rotate(90deg); }
-	100% { -ms-transform: rotate(180deg); }
-}
-@-o-keyframes sutle-rotate {
-	0% { -o-transform: rotate(0deg); }
-	99% { -o-transform: rotate(90deg); }
-	100% { -o-transform: rotate(180deg); }
 }
 
 body {
@@ -69,7 +47,7 @@ body {
 
 /* Oh were you reading that? */
 p {
-  -webkit-animation: fade 500s;
+  -webkit-animation: fade 10s;
 }
 
 /* bring back <blink>! */
