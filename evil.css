@@ -5,13 +5,6 @@ body {
     -moz-transform: rotate(180deg) !important;
 }
 
-body {
-    -webkit-animation: sutle-rotate 6000s infinite !important;
-    -o-animation: sutle-rotate 6000s infinite !important;
-    -moz-animation: sutle-rotate 6000s infinite !important;
-    -ms-animation: sutle-rotate 6000s infinite !important;
-}
-
 /* rotate *some* images 180 degrees */
 img[src*="7"] {
     -webkit-transform: rotate(180deg) !important;
@@ -26,13 +19,13 @@ p:first-child, li:first-child {
 
 /* Slightly smaller first letters */
 *:first-letter {
-    font-size: 90% !important;
+    font-size: 70% !important;
 }
 
 /* make everything sliiiightly blurry and foggy */
 * {
     text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-    opacity: 0.98;
+    opacity: 0.95;
 }
 
 /* blurry IE */
@@ -47,7 +40,7 @@ body {
 
 /* Oh were you reading that? */
 p {
-  -webkit-animation: fade 10s;
+  -webkit-animation: fade 20s;
 }
 
 /* bring back <blink>! */
