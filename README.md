@@ -3,7 +3,7 @@ evil.css
 
 Mess with peoples' webpages. Various subtle and not-so-subtle CSS rules that will slowly drive people insane.
 
-Inspired by [Upside-Down-Ternet](http://www.ex-parrot.com/pete/upside-down-ternet.html) and kitgoncharov's [evil.js](https://github.com/kitgoncharov/evil.js/tree/).
+Inspired by [Upside-Down-Ternet](http://www.ex-parrot.com/pete/upside-down-ternet.html) and kitcambridge's [evil.js](https://github.com/kitcambridge/evil.js/).
 
 Fork it and add your own evil rules. Worthy pull requests will be accepted.
 
@@ -28,9 +28,14 @@ Uninstall it by deselecting the stylesheet in Safari's preferences, or execute t
 Demo
 ----
 
-This bookmarklet will inject the latest version of evil.js into any webpage, just copy and paste into the URL bar and hit enter:
+This bookmarklet will inject the latest version of evil.css into any webpage, just copy and paste into the URL bar and hit enter:
 
     javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="https://rawgithub.com/tlrobinson/evil.css/master/evil.css";d.body.appendChild(l)})(document);
+
+See Also
+--------
+* [`evil.js`](https://github.com/kitcambridge/evil.js)
+* [`evil.sh`](https://github.com/mathiasbynens/evil.sh)
 
 Credits
 -------
