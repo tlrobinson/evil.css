@@ -50,9 +50,11 @@ p {
     51% { opacity: 0.0; }
     100% { opacity: 0.0; }
 }
-/* apply <blink> to H1s */
+/* apply <blink> to H1s (they should also be marquees)*/
 h1 {
      -webkit-animation: blink 1s infinite;
+     -webkit-marquee: auto medium infinite scroll normal;   
+     overflow-x: -webkit-marquee;  
 }
 
 /* always show scroll bars */
