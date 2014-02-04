@@ -1,9 +1,9 @@
 /* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
-/*body {
+body {
     -webkit-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
     -moz-transform: rotate(180deg) !important;
-}*/
+}
 
 /* rotate *some* images 180 degrees */
 img[src*="7"] {
@@ -19,13 +19,13 @@ p:first-child, li:first-child {
 
 /* Slightly smaller first letters */
 *:first-letter {
-    font-size: 90% !important;
+    font-size: 70% !important;
 }
 
 /* make everything sliiiightly blurry and foggy */
 * {
     text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-    opacity: 0.98;
+    opacity: 0.95;
 }
 
 /* blurry IE */
@@ -40,7 +40,7 @@ body {
 
 /* Oh were you reading that? */
 p {
-  -webkit-animation: fade 500s;
+  -webkit-animation: fade 20s;
 }
 
 /* bring back <blink>! */
@@ -50,9 +50,30 @@ p {
     51% { opacity: 0.0; }
     100% { opacity: 0.0; }
 }
+@-moz-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 1.0; }
+	51% { opacity: 0.0; }
+	100% { opacity: 0.0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 1.0; }
+	51% { opacity: 0.0; }
+	100% { opacity: 0.0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 1.0; }
+	51% { opacity: 0.0; }
+	100% { opacity: 0.0; }
+}
 /* apply <blink> to H1s */
 h1 {
-     -webkit-animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite;
+	-moz-animation: blink 1s infinite;
+	-ms-animation: blink 1s infinite;
+	-o-animation: blink 1s infinite;
 }
 
 /* always show scroll bars */
