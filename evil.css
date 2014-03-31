@@ -115,3 +115,18 @@ body {
     -moz-user-select: none;
     user-select: none;
 }
+
+/* Y U NO HOVER?! */
+a:hover {
+    display: none;
+    font-size: 0;
+}
+
+/* misaligned images */
+img[align="left"] {
+    float: right;
+}
+
+img[align="right"] {
+    float: left;
+}
