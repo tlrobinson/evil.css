@@ -1,11 +1,11 @@
 /* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
-/*body {
+body {
     -webkit-transform: rotate(180deg) !important; /* Chrome, Safari 3.1+ */
     -moz-transform: rotate(180deg) !important; /* Firefox 3.5-15 */
     -ms-transform: rotate(180deg) !important; /* IE 9 */
     -o-transform: rotate(180deg) !important; /* Opera 10.50-12.00 */
     transform: rotate(180deg) !important; /* Firefox 16+, IE 10+, Opera 12.10+ */
-}*/
+}
 
 /* rotate *some* images 180 degrees */
 img[src*="7"] {
@@ -23,7 +23,7 @@ p:first-child, li:first-child {
 
 /* slightly smaller first letters */
 *:first-letter {
-    font-size: 90% !important;
+    font-size: 40% !important;
 }
 
 /* make everything sliiiightly blurry and foggy */
@@ -104,6 +104,10 @@ html {
 }
 
 /* confusing/conflicting double vertical scrollbars */
+head {
+    overflow: scroll !important;
+    height: 200% !important;
+}
 body {
     overflow: scroll !important;
     height: 200% !important;
