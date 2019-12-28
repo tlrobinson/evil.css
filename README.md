@@ -1,55 +1,16 @@
-evil.css
+# evil.min.css
+A fork on [evil.css](https://github.com/tlrobinson/evil.css)
 ========
-
-Mess with peoples' webpages. Various subtle and not-so-subtle CSS rules that will slowly drive people insane.
-
-Inspired by [Upside-Down-Ternet](http://www.ex-parrot.com/pete/upside-down-ternet.html) and kitcambridge's [evil.js](https://github.com/kitcambridge/evil.js/).
-
-Fork it and add your own evil rules. Worthy pull requests will be accepted.
-
-How to use it
--------------
-
-Inject it into unsuspecting users' webpages. evil.js was intended to wreak havoc on sites hotlinking JavaScript library files, however hotlinking CSS is far less common. Some other evil ideas:
-
-* Set it as the user stylesheet in a browser (example: discouraging "customers" at retail stores from using the computers to browse Facebook and check their email).
-* Inject it into webpages or CSS files served to WiFi leachers on your open access point.
-* Exploit this week's WordPress vulnerability and add it to your friend's blog.
-* Hack an Internet backbone router and inject it into _everyone's_ webpages.
-
-A script called `evil-safari-mac.sh` is included that automates setting Safari's user stylesheet to the latest version of evil.css. Run it on any Mac using Terminal.app with this easy to remember URL:
-
-    curl -L bit.ly/evil-safari-mac | sh
-
-Uninstall it by deselecting the stylesheet in Safari's preferences, or execute this in a shell:
-
-    defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "1"
-
-Demo
-----
-
-This bookmarklet will inject the latest version of evil.css into any webpage, just copy and paste into the URL bar and hit enter:
-
-    javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="https://rawgithub.com/tlrobinson/evil.css/master/evil.css";d.body.appendChild(l)})(document);
-
-See Also
---------
-* [`evil.js`](https://github.com/kitcambridge/evil.js)
-* [`evil.sh`](https://github.com/mathiasbynens/evil.sh)
-
-Credits
--------
-
-* [@tlrobinson](https://twitter.com/tlrobinson)
-* [@paulbaumgart](https://twitter.com/paulbaumgart)
-* [@cconger](https://twitter.com/cconger)
-
-License
--------
-
-Public domain.
-
-Obligatory disclaimer
----------------------
-
-evil.css is purely for entertainment purposes. I'm not responsible for anything you do with evil.css, nor do I suggest doing any of the above activities, especially hacking backbone routers.
+### It's just making evil.css a little bit smaller to make it easier to hide evil.css in the web.
+###### Added Chinese README file (zh-cn-README.md).
+### Want to know how evil.css is used? Roughly the same as evil.css, but a little different, you can find the link at the bottom.
+### Have fun!
+# links
+#### :star:[evil.css](https://github.com/tlrobinson/evil.css) 
+#### :cloud:[zh-cn-README.md](./zh-cn-README.md) 
+#### :exclamation:[HowToUse.md](./HowToUse.md) 
+#### :yellow_heart:[zh-cn-HowToUse.md](./zh-cn-HowToUse.md) 
+# License
+Public Domain
+# Obligatory disclaimer
+### like evil.css, evil.min.css is purely for entertainment purposes. I do not accept any responsibility for anything you do to evil.css and evil.min.css, nor do I recommend that you do any of these activities, especially hacking the backbone router.
